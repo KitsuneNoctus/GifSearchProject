@@ -16,8 +16,13 @@ def index():
     # TODO: Get the first 10 results from the search results
 
     # TODO: Render the 'index.html' template, passing the gifs as a named parameter
+    @app.route('/gifs')
+    def get_gifs(gifs):
+        """Show user gifs requested"""
 
-    return render_template("index.html")
+        return render_template('index.html')
+
+    #return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
