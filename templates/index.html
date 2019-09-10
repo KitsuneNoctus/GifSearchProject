@@ -5,8 +5,14 @@
     What are you looking for?
 {% endblock %}
 {%body content%}
+<form action= '/search'>
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
     the search term to the query string -->
+    <p>
+        What gif are you looking for?
+        <input type="text" gif="gif">
+    </p>
+    <button type="Search">Search</button>
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 <ul>
@@ -16,4 +22,5 @@
 </ul>
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
+</form>
 {% endblock %}
