@@ -20,6 +20,8 @@ def index():
         # "query": query,
         # "apiKey": apiKey
         # }
+#Help from Kevin / My own work.
+#This goes to another page that displays results
 @app.route('/results', methods=['POST'])
 def results():
     """result."""
