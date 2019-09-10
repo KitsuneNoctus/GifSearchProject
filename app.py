@@ -8,6 +8,7 @@ app = Flask(__name__)
 def index():
     """Return homepage."""
     # TODO: Extract query term from url
+    query = request.args.get('Gif')
 
     # TODO: Make 'params' dict with query term and API key
 
