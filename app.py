@@ -11,12 +11,13 @@ def index():
     #reference used https://realpython.com/api-integration-in-python/
     query = request.args.get('Gif')
     # TODO: Make 'params' dict with query term and API key
+    #Referece to https://tenor.com/gifapi/documentation#quickstart-search
     apiKey = 	O2KCLOOCB0K2
     limit = 10
     #TEST search
     search_term = "Smiling"
     #Referece to https://tenor.com/gifapi/documentation#quickstart-search
-    params = {"":""}
+    #params = {"":""}
     gif_request = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apiKey, limit))
     if gif_request.status_code == 200:
         # load the GIFs using the urls for the smaller GIF sizes
