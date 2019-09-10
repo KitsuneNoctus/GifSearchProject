@@ -8,10 +8,12 @@ app = Flask(__name__)
 def index():
     """Return homepage."""
     # TODO: Extract query term from url
+    #reference used https://realpython.com/api-integration-in-python/
     query = request.args.get('Gif')
-
+    gif_request = requests.get()
     # TODO: Make 'params' dict with query term and API key
-
+    apiKey = 	O2KCLOOCB0K2
+    params = {"":""}
     # TODO: Make an API call to Tenor using the 'requests' library
 
     # TODO: Get the first 10 results from the search results
