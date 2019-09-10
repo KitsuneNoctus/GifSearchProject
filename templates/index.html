@@ -1,16 +1,13 @@
 
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
 {% extends 'base.html' %}
-{% block title %}
-    What are you looking for?
-{% endblock %}
-{%body content%}
-<form action= '/search'>
+{% block content %}
+<form action= '/', method='POST'>
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
     the search term to the query string -->
     <p>
         What gif are you looking for?
-        <input type="text" gif="gif">
+        <input type="text" name="Gif">
     </p>
     <button type="Search">Search</button>
 
