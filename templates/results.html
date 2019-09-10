@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
+    {% if GIFs %}
+
+    <ul>
+        {% for GIF in GIFs %}
+            {% include 'gif.html' %}
+            {% endfor %}
+    </ul>
+    {% else %}
+    Please Try again. No GIF could be found
+{% endif %}
+
+<!-- TODO: For each gif, include the 'gif.html' template to display it -->
+</form>
+{% endblock %}
