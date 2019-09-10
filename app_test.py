@@ -13,6 +13,25 @@ def index():
         query = request.form.get('Gif')
         return tenorApi.findFunc(query)
 
+    apiKey ="O2KCLOOCB0K2"
+    limit = 10
+
+    def findFunc(search_term):
+        #TEST search
+
+        #Referece to https://tenor.com/gifapi/documentation#quickstart-search
+        params = {
+        "query": query,
+        "apiKey": apiKey
+        }
+        
+        gif_request = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apiKey, limit))
+        if gif_request.status_code == 200:
+            # load the GIFs using the urls for the smaller GIF sizes
+            top_10gifs = json.loads(gif_request.content)
+            return top_10gifs
+        else:
+            top_10gifs = None
     #TODO: Make 'params' dict with query term and API key
     #Referece to https://tenor.com/gifapi/documentation#quickstart-search
 
