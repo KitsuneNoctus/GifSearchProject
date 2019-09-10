@@ -12,7 +12,6 @@ def index():
 
     # TODO: Make 'params' dict with query term and API key
 
-
     # TODO: Make an API call to Tenor using the 'requests' library
 
     # TODO: Get the first 10 results from the search results
