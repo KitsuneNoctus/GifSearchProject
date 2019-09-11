@@ -6,15 +6,16 @@
 <html>
 <body>
   <form
-      
+
 
 
 </html>
 
 
-
-
-
 {% block content %}
-
+<ul>
+    {% for gif in gifs %}
+        {% include 'gif.html' %}
+        {% endfor %}
+</ul>
 {% endblock %}
