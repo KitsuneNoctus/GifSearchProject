@@ -2,7 +2,7 @@ body {
   background-color: rgb(66, 135, 245);
   margin: auto;
   width: 50%;
-  border: 10px dotted blue;
+  /* border: 10px dotted blue; */
   padding: 10px;
 }
 
@@ -13,7 +13,10 @@ button {
 h1 {
   color: rgb(59, 209, 139);
   font-family: 'Marko One', serif;
+  font-size: 55px;
   text-align:center;
+  text-shadow: 3px 2px rgb(237, 233, 100);
+
 }
 
 h3 {
@@ -24,4 +27,11 @@ h3 {
 p {
   color: rgb(59, 209, 139);
   font-family: 'Exo 2', sans-serif;
+
+}
+
+ul {
+  display: grid;
+  grid-template: 150px / auto auto auto;
+  justify-content:center;
 }

@@ -8,7 +8,7 @@
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
     {% if gifs %}
 <!-- Might not need for loop -->
-    <ul>
+    <ul class='gif_grid'>
         {% for gif in gifs %}
             {% include 'gif.html' %}
             {% endfor %}
