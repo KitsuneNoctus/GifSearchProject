@@ -1,8 +1,8 @@
 body {
-  background-color: rgb(66, 158, 245);
+  background-color: rgb(66, 135, 245);
   margin: auto;
   width: 50%;
-  border: 10px solid blue;
+  border: 10px dotted blue;
   padding: 10px;
 }
 
@@ -11,16 +11,17 @@ button {
 }
 
 h1 {
-  color: rgb(252,129,40);
+  color: rgb(59, 209, 139);
+  font-family: 'Marko One', serif;
+  text-align:center;
+}
+
+h3 {
+  color: rgb(59, 209, 139);
   font-family: 'Marko One', serif;
 }
 
-/* h3 {
-  color: rgb(255, 150, 150);
-  font-family: 'Marko One', serif;
-} */
-
 p {
-  color: rgb(252,129,40);
+  color: rgb(59, 209, 139);
   font-family: 'Exo 2', sans-serif;
 }
