@@ -11,6 +11,9 @@ def index():
     """Return homepage."""
     # TODO: Extract query term from url
     #reference used https://realpython.com/api-integration-in-python/
+
+    results = findFunc("happy")
+    gif_urls = results['results']
     return render_template("index.html")
     #     top_10gifs = tenorApi.findFunc(query)
     #     results = top_10gifs['results']
