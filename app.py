@@ -12,9 +12,9 @@ def index():
     # TODO: Extract query term from url
     #reference used https://realpython.com/api-integration-in-python/
 
-    results = findFunc("happy")
+    results = top_ten()
     gif_urls = results['results']
-    return render_template("index.html")
+    return render_template("index.html", gifs=gif_urls)
     #     top_10gifs = tenorApi.findFunc(query)
     #     results = top_10gifs['results']
         #Referece to https://tenor.com/gifapi/documentation#quickstart-search
@@ -50,7 +50,17 @@ def results():
     # # TODO: Render the 'index.html' template, passing the gifs as a named parameter
 
 
+#Again from / using tenor website code examples
+def top_ten():
+    apiKey = "O2KCLOOCB0K2"
+    limit = 10
+    top_requests = requests.get("https://api.tenor.com/v1/trending?key=%s&limit=%s" % (apiKey, limit))
+    if top_requests.status_code == 200:
+        trending_gifs = json.loads(top_requests.content)
+    else:
+        trending_gifs = None
 
+    return trending_gifs
 
 def findFunc(search_term):
     apiKey = "O2KCLOOCB0K2"
