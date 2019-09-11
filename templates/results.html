@@ -1,16 +1,10 @@
 {% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html>
-
-<body>
-  <form
-    <h3> Here are the Results!!</h3>
-
-</html>
-
 
 {% block content %}
+{% block title %}
+    Here are the Results!!
+{% endblock %}
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
     {% if gifs %}
 <!-- Might not need for loop -->
@@ -24,5 +18,4 @@
 {% endif %}
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-</form>
 {% endblock %}
