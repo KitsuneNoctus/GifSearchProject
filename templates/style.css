@@ -8,4 +8,10 @@ button {
 
 h1 {
   color: rgb(252,129,40)
+  font-family: 'Marko One', serif;
+}
+
+p {
+  color: rgb(252,129,40)
+  font-family: 'Exo 2', sans-serif;
 }
