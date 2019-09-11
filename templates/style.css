@@ -1,12 +1,16 @@
 body {
   background-color: rgb(66, 158, 245);
+  margin: auto;
+  width: 50%;
+  border: 10px solid blue;
+  padding: 10px;
 }
 
 button {
   border-style:outset;
 }
 
-h1 {
+/* h1 {
   color: rgb(252,129,40);
   font-family: 'Marko One', serif;
 }
@@ -14,7 +18,7 @@ h1 {
 h3 {
   color: rgb(255, 150, 150);
   font-family: 'Marko One', serif;
-}
+} */
 
 p {
   color: rgb(252,129,40);
