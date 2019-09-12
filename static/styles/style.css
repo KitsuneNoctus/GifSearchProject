@@ -38,7 +38,35 @@ h1 {
   border-style: dashed;
 
 }
+/*---------All of this code is copied straight from w3schools, as a way to try and test the nav bar----------*/
+/*----------------------------------------------*/
+.nav_bar {
+  background-color: #333;
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.nav_bar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav_bar a:hover {
+  background-color: #ddd;
+  color: gray;
+}
+
+/* Add a color to the active/current link */
+.nav_bar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/*----------------------------------------------*/
 h3 {
   color: rgb(59, 209, 139);
   font-family: 'Marko One', serif;

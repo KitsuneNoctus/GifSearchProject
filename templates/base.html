@@ -10,14 +10,27 @@
 <body>
   <h1>GIF Search!!</h1>
   <!-- The Serch bar where you can type in your query -->
-  <form action= '/results', method='POST'>
+  <div class="nav_bar">
+      <a href="https://www.makeschool.com/portfolio/Henry-Calderon">Henry</a>
+      <a href="https://www.makeschool.com/portfolio/Diyar-Kudrat">Diyar</a>
+      <form action= '/results', method='POST'>
+          <!-- <p>
+            What GIFs are you looking for?
+          </p> -->
+          <input type="text" name="Gif" placeholder="What GIFs are you looking for?">
+
+          <button type="Search">Search</button>
+      </form>
+  </div>
+  
+  <!-- <form action= '/results', method='POST'>
       <p>
         What GIFs are you looking for?
       </p>
       <input type="text" name="Gif" placeholder="Search">
 
       <button type="Search">Search</button>
-  </form>
+  </form> -->
 
 
     <!-- TODO: Make a block 'body' so that the homepage can extend base -->
