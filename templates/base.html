@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- The link below is for the custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Marko+One&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>GIF Search</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 <body>
+  <h1>GIF Search!!</h1>
+  <!-- The Serch bar where you can type in your query -->
   <form action= '/results', method='POST'>
-
-  <!-- TODO: Make an HTML form containing a search box and a submit button to add
-      the search term to the query string -->
-
-      <h1>GIF Search!!</h1>
-
       <p>
         What GIFs are you looking for?
       </p>
       <input type="text" name="Gif" placeholder="Search">
 
       <button type="Search">Search</button>
-
-
-
-  <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
-
-
-  <!-- TODO: For each gif, include the 'gif.html' template to display it -->
   </form>
+
 
     <!-- TODO: Make a block 'body' so that the homepage can extend base -->
     {% block content %}
