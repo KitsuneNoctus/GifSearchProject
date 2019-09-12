@@ -5,7 +5,6 @@ import json
 
 
 app = Flask(__name__)
-#Help from Kevin
 @app.route('/')
 def index():
     """Return homepage."""
