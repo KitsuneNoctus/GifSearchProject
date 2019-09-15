@@ -53,6 +53,7 @@ p {
 
 ul {
   display: grid;
-  grid-template: 150px / auto auto auto;
+  grid-template: 200px / auto auto auto;
+  grid-gap: 20px;
   justify-content:center;
 }
