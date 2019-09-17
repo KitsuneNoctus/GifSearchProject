@@ -10,6 +10,8 @@ body {
 }
 
 button {
+  float: right;
+  /* margin-top: auto; */
   border-style:outset;
   font-size: 16px;
   border-radius: 25px;
@@ -18,7 +20,10 @@ button {
 
 /* Got animation from w3schools.com */
 input[type=text] {
-  width: 150px;
+  /* align-self: center; */
+  float: right;
+  /* margin-top: 20px; */
+  width: 200px;
   border-radius: 25px;
   font-size: 16px;
   -webkit-transition: width 0.4s ease-in-out;
