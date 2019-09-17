@@ -36,10 +36,6 @@ def results():
 
 
 
-    # #Referece to https://tenor.com/gifapi/documentation#quickstart-search
-
-
-    # TODO: Make 'params' dict with query term and API key
     #Referece to https://tenor.com/gifapi/documentation#quickstart-search
 
     # # TODO: Make an API call to Tenor using the 'requests' library
