@@ -1,8 +1,11 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
 from flask import Flask, render_template, request
 #import tenorApi
 import requests
 import json
-
+TENOR_API_KEY = os.getenv("TENOR_API_KEY")
 
 app = Flask(__name__)
 @app.route('/')
