@@ -50,7 +50,7 @@ def results():
 
 #Again from / using tenor website code examples
 def top_ten():
-    apiKey = "O2KCLOOCB0K2"
+    apiKey = TENOR_API_KEY
     limit = 10
     top_requests = requests.get("https://api.tenor.com/v1/trending?key=%s&limit=%s" % (apiKey, limit))
     if top_requests.status_code == 200:
@@ -61,7 +61,7 @@ def top_ten():
     return trending_gifs
 
 def findFunc(search_term):
-    apiKey = "O2KCLOOCB0K2"
+    apiKey = TENOR_API_KEY
     limit = 10
     gif_request = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apiKey, limit))
     if gif_request.status_code == 200:
